@@ -1,0 +1,1 @@
+# ng-graphql-mode
