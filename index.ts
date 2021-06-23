@@ -75,6 +75,8 @@ const sendQuery = async () => {
 
   lisp.with_current_buffer(resultBuffer, () => {
     lisp.erase_buffer();
+    lisp.json_mode();
     lisp.insert(json);
+    lisp.json_pretty_print_buffer();
   });
 };
